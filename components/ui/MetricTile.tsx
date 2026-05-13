@@ -48,8 +48,8 @@ export function MetricTile({ value, suffix = "", label, emphasis = false, decima
       className="rounded-2xl border border-border bg-panel p-6 transition-colors hover:border-accentDim md:p-8"
     >
       <div
-        className={`font-display font-bold leading-none ${emphasis ? "text-accent" : "text-ink"}`}
-        style={{ fontSize: "clamp(40px, 5vw, 64px)" }}
+        className={`font-display font-bold leading-none tabular-nums ${emphasis ? "text-accent" : "text-ink"}`}
+        style={{ fontSize: "clamp(34px, 3.6vw, 52px)" }}
       >
         {display}
         <span className="text-current">{suffix}</span>

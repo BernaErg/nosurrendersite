@@ -10,7 +10,7 @@ export function Proof() {
       title={content.proof.title}
       subtitle={content.proof.subtitle}
     >
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {content.proof.metrics.map((m, i) => (
           <MetricTile
             key={m.label}

@@ -6,7 +6,6 @@ export function Quality() {
   return (
     <SectionShell
       id="quality"
-      eyebrow={content.quality.eyebrow}
       title={content.quality.title}
       subtitle={content.quality.subtitle}
     >

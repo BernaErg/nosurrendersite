@@ -2,8 +2,7 @@ export const content = {
   nav: {
     items: [
       { label: "PRODUCT", href: "#product" },
-      { label: "QUALITY", href: "#quality" },
-      { label: "PROOF", href: "#proof" },
+      { label: "METRICS", href: "#proof" },
       { label: "MARKETS", href: "#markets" },
       { label: "CONTACT", href: "#contact" },
     ],
