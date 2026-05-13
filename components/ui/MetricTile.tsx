@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   value: number;
+  prefix?: string;
   suffix?: string;
   label: string;
   emphasis?: boolean;
@@ -12,7 +13,7 @@ type Props = {
   index?: number;
 };
 
-export function MetricTile({ value, suffix = "", label, emphasis = false, decimals = 0, index = 0 }: Props) {
+export function MetricTile({ value, prefix = "", suffix = "", label, emphasis = false, decimals = 0, index = 0 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.4 });
   const count = useMotionValue(0);
@@ -51,6 +52,7 @@ export function MetricTile({ value, suffix = "", label, emphasis = false, decima
         className={`font-display font-bold leading-none tabular-nums ${emphasis ? "text-accent" : "text-ink"}`}
         style={{ fontSize: "clamp(34px, 3.6vw, 52px)" }}
       >
+        <span className="text-current">{prefix}</span>
         {display}
         <span className="text-current">{suffix}</span>
       </div>
