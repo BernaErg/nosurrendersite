@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #08070C;
+  color: #F5F0FF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #FF1F8F;
+  color: #08070C;
+}
+
+.hero-3d {
+  text-shadow:
+    1px 1px 0 #9E1259,
+    2px 2px 0 #9E1259,
+    3px 3px 0 #7a0e45,
+    4px 4px 0 #7a0e45,
+    5px 5px 0 #5a0a33,
+    6px 6px 0 #5a0a33,
+    7px 7px 0 #3d0722,
+    8px 8px 12px rgba(255, 31, 143, 0.35);
+}
+
+.grid-fade-mask {
+  -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+  mask-image: linear-gradient(to top, black 0%, transparent 100%);
+}
